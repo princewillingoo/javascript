@@ -1,13 +1,13 @@
-alert( true || true );   // true
-alert( false || true );  // true
-alert( true || false );  // true
-alert( false || false ); // false
+console.log( true || true );   // true
+console.log( false || true );  // true
+console.log( true || false );  // true
+console.log( false || false ); // false
 
 let hour = 12;
 let isWeekend = true;
 
 if (hour < 10 || hour > 18 || isWeekend) {
-  alert( 'The office is closed.' ); // it is the weekend
+  console.log( 'The office is closed.' ); // it is the weekend
 }
 
 // result = value1 || value2 || value3;
@@ -20,12 +20,12 @@ if (hour < 10 || hour > 18 || isWeekend) {
 
 // A value is returned in its original form, without the conversion.
 
-alert( 1 || 0 ); // 1 (1 is truthy)
+console.log( 1 || 0 ); // 1 (1 is truthy)
 
-alert( null || 1 ); // 1 (1 is the first truthy value)
-alert( null || 0 || 1 ); // 1 (the first truthy value)
+console.log( null || 1 ); // 1 (1 is the first truthy value)
+console.log( null || 0 || 1 ); // 1 (the first truthy value)
 
-alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+console.log( undefined || null || 0 ); // 0 (all falsy, returns the last value)
 
 
 // Getting the first truthy value from a list of variables or expressions.
@@ -34,30 +34,30 @@ let firstName = "";
 let lastName = "";
 let nickName = "SuperCoder";
 
-alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+console.log( firstName || lastName || nickName || "Anonymous"); // SuperCoder
 
 // Short-circuit evaluation.
 
-true || alert("not printed");
-false || alert("printed");
+true || console.log("not printed");
+false || console.log("printed");
 
 // AND
  
-alert( true && true );   // true
-alert( false && true );  // false
-alert( true && false );  // false
-alert( false && false ); // false
+console.log( true && true );   // true
+console.log( false && true );  // false
+console.log( true && false );  // false
+console.log( false && false ); // false
 
 // let hour = 12;
 let minute = 30;
 
 if (hour == 12 && minute == 30) {
-  alert( 'The time is 12:30' );
+  console.log( 'The time is 12:30' );
 }
 
 
 if (1 && 0) { // evaluated as true && false
-  alert( "won't work, because the result is falsy" );
+  console.log( "won't work, because the result is falsy" );
 }
 
 result = value1 && value2 && value3;
@@ -85,12 +85,12 @@ result = !value;
 
 // A double NOT !! is sometimes used for converting a value to boolean type:
 
-alert( !!"non-empty string" ); // true
-alert( !!null ); // false
+console.log( !!"non-empty string" ); // true
+console.log( !!null ); // false
 
 // That is, the first NOT converts the value to boolean and returns the inverse, and the second NOT inverses it again. In the end, we have a plain value-to-boolean conversion.
 
 // There’s a little more verbose way to do the same thing – a built-in Boolean function:
 
-alert( Boolean("non-empty string") ); // true
-alert( Boolean(null) ); // false
+console.log( Boolean("non-empty string") ); // true
+console.log( Boolean(null) ); // false
