@@ -44,5 +44,5 @@ if (!window.Promise) {
 }
 
 if (!window.Promise) {
-    window.Promise = ... // custom implementation of the modern language feature
+    window.Promise = "" // custom implementation of the modern language feature
 }
