@@ -51,13 +51,12 @@ try {
 
 // Further inheritance
 
-class PropertyRequiredError extends Vallidator {
+class PropertyRequiredError extends ValidationError {
     constructor(property) {
-        super("No property: " + property);
-        this.name = "PropertyRequiredError";
-        this.property = property;
+      super("No property: " + property);
+      this.name = "PropertyRequiredError";
+      this.property = property;
     }
 }
 
 // Wrapping exceptions
-
